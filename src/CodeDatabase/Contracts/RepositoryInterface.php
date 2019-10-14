@@ -1,7 +1,7 @@
 <?php
 namespace CodePress\CodeDatabase\Contracts;
 
-interface RepositeryInterface
+interface RepositoryInterface
 {
     public function all($columns = ['*']);
 

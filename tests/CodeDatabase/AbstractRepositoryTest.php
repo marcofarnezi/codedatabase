@@ -2,7 +2,7 @@
 namespace CodePress\CodeDatabase\Tests\CodeDatabase;
 
 use CodePress\CodeDatabase\AbstractRepository;
-use CodePress\CodeDatabase\Contracts\RepositeryInterface;
+use CodePress\CodeDatabase\Contracts\RepositoryInterface;
 use CodePress\CodeDatabase\Tests\AbstractTestCase;
 use CodePress\CodeDatabase\Tests\Stub\Model\Category;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -19,7 +19,7 @@ class AbstractRepositoryTest extends AbstractTestCase
     public function test_if_implements_repositoryinterface()
     {
         $mock = \Mockery::mock(AbstractRepository::class);
-        $this->assertInstanceOf(RepositeryInterface::class, $mock);
+        $this->assertInstanceOf(RepositoryInterface::class, $mock);
     }
 
     public function test_should_return_all_without_argument()

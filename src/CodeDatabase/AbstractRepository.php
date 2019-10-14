@@ -1,9 +1,9 @@
 <?php
 namespace CodePress\CodeDatabase;
 
-use CodePress\CodeDatabase\Contracts\RepositeryInterface;
+use CodePress\CodeDatabase\Contracts\RepositoryInterface;
 
-abstract class AbstractRepository implements RepositeryInterface
+abstract class AbstractRepository implements RepositoryInterface
 {
     /**
      * @var  \Illuminate\Database\Eloquent\Model
